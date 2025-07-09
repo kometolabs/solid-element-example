@@ -2,6 +2,7 @@
   "name": "demo",
   "version": "0.1.0",
   "scripts": {
+    "build": "pnpm update resizable-button",
     "start": "vite --open",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,html}'"
   },

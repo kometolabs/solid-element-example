@@ -14,7 +14,6 @@ export default defineConfig({
       entry: 'src/resizable-button.tsx',
       name: 'ResizableButton',
       formats: ['es', 'cjs'],
-      fileName: (format) => `resizable-button.${format}.js`,
     },
   },
 })
