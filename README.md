@@ -6,6 +6,8 @@ The theming for the web component implemented using [light-dark()](https://devel
 
 The web component is using Shadow DOM.
 
+**[Demo](https://solid-element-example.netlify.app/)**
+
 ## Project Structure
 
 - [packages/resizable-button](packages/resizable-button) - A custom resizable button element built with Solid.js and solid-element
@@ -19,7 +21,7 @@ The web component is using Shadow DOM.
 pnpm install
 ```
 
-### 2. Start the demo
+### 2. Build and start the demo
 
 ```bash
 pnpm start
