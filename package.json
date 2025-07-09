@@ -4,7 +4,11 @@
   "scripts": {
     "build": "pnpm --filter resizable-button build && pnpm --filter demo build",
     "start": "pnpm build && pnpm --filter demo start",
-    "format": "pnpm -r format"
+    "format": "pnpm -r format",
+    "prepare": "husky"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
 }
