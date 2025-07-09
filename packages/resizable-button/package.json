@@ -2,8 +2,8 @@
   "name": "resizable-button",
   "version": "0.1.0",
   "description": "",
-  "main": "dist/resizable-button.cjs.js",
-  "module": "dist/resizable-button.es.js",
+  "main": "dist/resizable-button.js",
+  "module": "dist/resizable-button.mjs",
   "types": "dist/resizable-button.d.ts",
   "scripts": {
     "build": "vite build",
@@ -15,8 +15,8 @@
   },
   "devDependencies": {
     "prettier": "^3.6.2",
-    "typescript": "^5.0.0",
-    "vite": "^7.0.2",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.3",
     "vite-plugin-dts": "^4.5.4",
     "vite-plugin-solid": "^2.11.7"
   }
