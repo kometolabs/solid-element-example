@@ -4,7 +4,7 @@
   "main": "dist/index.html",
   "scripts": {
     "build": "pnpm update resizable-button && vite build",
-    "start": "vite --open",
+    "start": "vite preview --open",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,html}'"
   },
   "dependencies": {
