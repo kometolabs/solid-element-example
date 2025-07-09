@@ -1,14 +1,14 @@
 import { customElement } from 'solid-element'
 import { createSignal } from 'solid-js'
 
-export interface WebComponentProps {
-  size?: number
+export interface ResizableButtonProps {
+  defaultSize?: number
 }
 
 declare module 'solid-js' {
   namespace JSX {
     interface IntrinsicElements {
-      'resizable-button': WebComponentProps
+      'resizable-button': ResizableButtonProps
     }
   }
 }
@@ -30,16 +30,14 @@ export const styles = (size: number) => `
 
 customElement(
   'resizable-button',
-  { size: 6 },
-  (props: WebComponentProps, { element }) => {
-    // noShadowDOM()
+  { defaultSize: 10 },
+  (props: ResizableButtonProps) => {
+    const { defaultSize } = props
 
-    const { size } = props
-
-    const [buttonSize, setButtonSize] = createSignal(size!)
+    const [buttonSize, setButtonSize] = createSignal(defaultSize!)
 
     const handleButtonClick = async () => {
-      setButtonSize((s) => s + 1)
+      setButtonSize((currentSize) => ++currentSize)
     }
 
     return (

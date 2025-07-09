@@ -9,7 +9,6 @@
     :root {
       color-scheme: light dark;
     }
-
     .light {
       color-scheme: light;
     }
@@ -17,30 +16,55 @@
     .dark {
       color-scheme: dark;
     }
+
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      height: 100vh;
+    }
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+    }
+    main {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      margin: 1rem;
+    }
   </style>
 
   <script type="module" src="/node_modules/resizable-button/dist/resizable-button.es.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const themeToggle = document.querySelector('.theme-toggle')
-
-      themeToggle.addEventListener('click', () => {
-        if (document.documentElement.classList.contains('light')) {
-          document.documentElement.classList.add('dark')
-          document.documentElement.classList.remove('light')
-        } else {
-          document.documentElement.classList.add('light')
-          document.documentElement.classList.remove('dark')
-        }
+      document.querySelector('.theme-toggle').addEventListener('click', () => {
+        document.documentElement.classList.toggle('light')
+        document.documentElement.classList.toggle('dark')
       })
     })
   </script>
 </head>
 
 <body>
-  <button class="theme-toggle">Toggle Theme</button>
+  <header>
+    <button class="theme-toggle">Toggle Theme</button>
+  </header>
 
-  <resizable-button />
+  <main>
+    <resizable-button />
+  </main>
 </body>
 
 </html>
