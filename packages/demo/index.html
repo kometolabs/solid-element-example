@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" class="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>solid-element web component demo</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+    }
+
+    .light {
+      color-scheme: light;
+    }
+
+    .dark {
+      color-scheme: dark;
+    }
+  </style>
+
+  <script type="module" src="/node_modules/resizable-button/dist/resizable-button.es.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const themeToggle = document.querySelector('.theme-toggle')
+
+      themeToggle.addEventListener('click', () => {
+        if (document.documentElement.classList.contains('light')) {
+          document.documentElement.classList.add('dark')
+          document.documentElement.classList.remove('light')
+        } else {
+          document.documentElement.classList.add('light')
+          document.documentElement.classList.remove('dark')
+        }
+      })
+    })
+  </script>
+</head>
+
+<body>
+  <button class="theme-toggle">Toggle Theme</button>
+
+  <resizable-button />
+</body>
+
+</html>

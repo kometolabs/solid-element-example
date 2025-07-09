@@ -1,0 +1,15 @@
+{
+  "name": "demo",
+  "version": "0.1.0",
+  "scripts": {
+    "start": "vite --open",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,html}'"
+  },
+  "dependencies": {
+    "resizable-button": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "^7.0.2",
+    "prettier": "^3.6.2"
+  }
+}

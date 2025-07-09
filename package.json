@@ -1,0 +1,10 @@
+{
+  "name": "solid-element-example",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "pnpm --filter resizable-button build && pnpm --filter demo build",
+    "start": "pnpm build && pnpm --filter demo start",
+    "format": "pnpm -r format"
+  },
+  "license": "MIT"
+}
