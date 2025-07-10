@@ -13,7 +13,7 @@ declare module 'solid-js' {
   }
 }
 
-export const styles = (size: number) => `
+const styles = (size: number) => `
 :host button {
   background-color: light-dark(indigo, white);
   color: light-dark(white, indigo);

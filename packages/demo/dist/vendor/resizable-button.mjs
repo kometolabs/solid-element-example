@@ -538,6 +538,3 @@ we("resizable-button", {
   })();
 });
 re(["click"]);
-export {
-  Ce as styles
-};
