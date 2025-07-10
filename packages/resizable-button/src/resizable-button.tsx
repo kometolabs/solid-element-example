@@ -15,9 +15,9 @@ declare module 'solid-js' {
 
 export const styles = (size: number) => `
 :host button {
-  background-color: light-dark(white, indigo);
-  color: light-dark(indigo, white);
-  border: 1px solid light-dark(indigo, white);
+  background-color: light-dark(indigo, white);
+  color: light-dark(white, indigo);
+  border: 1px solid light-dark(white, indigo);
   border-radius: ${size * 0.5}px;
   cursor: pointer;
   padding: ${size}px ${size * 1.5}px;

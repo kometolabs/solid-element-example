@@ -512,9 +512,9 @@ function we(e, t, s) {
 var _e = /* @__PURE__ */ ne("<div><style></style><button>Click to Enlarge");
 const Ce = (e) => `
 :host button {
-  background-color: light-dark(white, indigo);
-  color: light-dark(indigo, white);
-  border: 1px solid light-dark(indigo, white);
+  background-color: light-dark(indigo, white);
+  color: light-dark(white, indigo);
+  border: 1px solid light-dark(white, indigo);
   border-radius: ${e * 0.5}px;
   cursor: pointer;
   padding: ${e}px ${e * 1.5}px;
