@@ -43,7 +43,7 @@ footer {
   align-items: center;
   color: light-dark(indigo, white);
 }
-.theme-toggle img {
+.theme-toggle svg {
   width: 24px;
   height: 24px;
 }
