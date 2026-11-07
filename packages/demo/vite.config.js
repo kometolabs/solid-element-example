@@ -8,6 +8,8 @@ export default defineConfig({
         {
           src: 'node_modules/resizable-button/dist/resizable-button.mjs',
           dest: 'vendor',
+          // Copy the file itself, not its node_modules/... path.
+          rename: { stripBase: true },
         },
       ],
     }),

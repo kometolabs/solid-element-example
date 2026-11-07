@@ -10,5 +10,6 @@
   "license": "MIT",
   "devDependencies": {
     "husky": "^9.1.7"
-  }
+  },
+  "packageManager": "pnpm@12.18.0"
 }
